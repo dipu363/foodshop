@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/item_card.dart';
+import '../../widget/item_card.dart';
+
+
 
 class CategoryItemScreen extends StatelessWidget {
   const CategoryItemScreen({Key? key}) : super(key: key);
@@ -11,7 +13,7 @@ class CategoryItemScreen extends StatelessWidget {
       body: ListView.builder(
         itemCount: 20,
         itemBuilder: (context,index){
-          return ItemCardPreview();
+          return const  ItemCardPreview();
         },
       ),
     );
