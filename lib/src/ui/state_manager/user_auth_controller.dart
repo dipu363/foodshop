@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:foodshop/src/ui/state_manager/profile_controller.dart';
 import 'package:get/get.dart';
 
-import '../screen/login_screen.dart';
+import '../screen/app_common_screen/home_screen.dart';
+import '../screen/app_common_screen/login_screen.dart';
 
 class UserAuthController extends GetxController {
   static UserAuthController get instance => Get.find<UserAuthController>();
@@ -42,9 +43,9 @@ class UserAuthController extends GetxController {
       print('login------user role found -----------${userinfo.uRole}');
       if (userinfo.uRole == 'Customer') {
         print('login------route customer dashboard-----------$email');
-        //Get.off(()=>const TeacherDashboard());
+        Get.off(()=>const HomeScreen());
       } else {
-        //Get.off(()=>const StudentDashboard());
+        Get.off(()=>const HomeScreen());
         print('login----- sailor dashboard-----------$email');
       }
     }

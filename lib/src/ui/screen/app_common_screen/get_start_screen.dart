@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:foodshop/src/ui/screen/signup_screen.dart';
+import 'package:foodshop/src/ui/screen/app_common_screen/signup_screen.dart';
 import 'package:get/get.dart';
 
-import '../util/app_colors.dart';
+import '../../util/app_colors.dart';
 
 class GetStartedScreen extends StatefulWidget {
   const GetStartedScreen({Key? key}) : super(key: key);

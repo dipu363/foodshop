@@ -1,13 +1,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../data/user_model.dart';
-import '../state_manager/profile_controller.dart';
-import '../state_manager/user_auth_controller.dart';
-import '../util/app_colors.dart';
-import '../util/style.dart';
-import '../widget/common_edittext_field.dart';
-import '../widget/common_elevated_button.dart';
+import '../../../data/user_model.dart';
+import '../../state_manager/profile_controller.dart';
+import '../../state_manager/user_auth_controller.dart';
+import '../../util/app_colors.dart';
+import '../../util/style.dart';
+import '../../widget/common_edittext_field.dart';
+import '../../widget/common_elevated_button.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key, required this.userRole}) : super(key: key);

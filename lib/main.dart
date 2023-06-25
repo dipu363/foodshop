@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import '/src/ui/state_manager/profile_controller.dart';
 import '/src/ui/state_manager/user_auth_controller.dart';
-import '/src/ui/screen/splash_screen.dart';
+import 'src/ui/screen/app_common_screen/splash_screen.dart';
 import 'package:get/get.dart';
 
 Future<void> main() async {

@@ -2,12 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../state_manager/user_auth_controller.dart';
-import '../util/app_colors.dart';
-import '../util/style.dart';
-import '../widget/common_edittext_field.dart';
-import '../widget/common_elevated_button.dart';
-import '../screen/get_start_screen.dart';
+import '../../state_manager/user_auth_controller.dart';
+import '../../util/app_colors.dart';
+import '../../util/style.dart';
+import '../../widget/common_edittext_field.dart';
+import '../../widget/common_elevated_button.dart';
+import 'get_start_screen.dart';
 
 class LogInScreen extends StatefulWidget {
   const LogInScreen({Key? key}) : super(key: key);
