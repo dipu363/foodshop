@@ -7,6 +7,9 @@ import 'package:get/get.dart';
 
 import '../../consts/consts.dart';
 import '../../util/themes.dart';
+import '../customer/cart_screeens.dart';
+import '../customer/product_details_screen.dart';
+import '../customer/shop_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -54,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
               color: Colors.black,
             ),
             onPressed: () {
-              // Get.to(CartScreeen());
+            Get.to(const CartScreen());
             },
           ),
           const SizedBox(width: 20),
@@ -121,9 +124,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       itemBuilder: (context, index) {
                         return GestureDetector(
                           onTap: () {
-                            /*  Get.to(ProductDetailsPage(
+                              Get.to(ProductDetailsPage(
                               data: snapshot.data!.docs[index]
-                            ));*/
+                            ));
                           },
                           child: Padding(
                             padding: const EdgeInsets.all(10),
@@ -167,7 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
-                      // Get.to(ShopScreen());
+                       Get.to(const ShopScreen());
                     },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -217,3 +220,4 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
